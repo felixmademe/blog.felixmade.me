@@ -17,14 +17,17 @@ class CreatePostsTable extends Migration
             $table->bigIncrements( 'id' );
             $table->string( 'title' );
             $table->longText( 'text' );
-            $table->integer( 'points' );
-            $table->integer( 'views' );
-            $table->integer( 'shares' );
+            $table->integer( 'points' )->default( 0 );
+            $table->integer( 'views' )->default( 0 );
+            $table->integer( 'shares' )->default( 0 );
+            $table->unsignedBigInteger('user_id');
+
             $table->foreign('user_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade');
-            $table->softDeletes();
             $table->timestamps();
+            $table->softDeletes();
+            $table->index( [ 'title', 'user_id' ] );
         });
     }
 
