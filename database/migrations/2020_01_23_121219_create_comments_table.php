@@ -18,14 +18,17 @@ class CreateCommentsTable extends Migration
             $table->string( 'name' );
             $table->string( 'email' );
             $table->ipAddress('ip');
-            $table->string( 'title' );
-            $table->longText( 'text' );
-            $table->integer( 'points' );
+            $table->string( 'title' )->nullable();
+            $table->string( 'text' );
+            $table->integer( 'points' )->default( 0 );
+            $table->unsignedBigInteger('post_id');
+            $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('post_id')
                 ->references('id')->on('posts')
                 ->onDelete('cascade');
-            $table->softDeletes();
-            $table->timestamps();
+            $table->index( [ 'title', 'text' ] );
         });
     }
 
