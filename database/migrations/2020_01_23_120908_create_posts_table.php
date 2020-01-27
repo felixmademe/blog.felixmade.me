@@ -16,7 +16,9 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements( 'id' );
             $table->string( 'title' );
+            $table->string('slug');
             $table->longText( 'text' );
+            $table->enum( 'state', [ 'public', 'private', 'draft' ] );
             $table->integer( 'points' )->default( 0 );
             $table->integer( 'views' )->default( 0 );
             $table->integer( 'shares' )->default( 0 );
