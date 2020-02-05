@@ -1,0 +1,47 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+    &.sidebar {
+        flex-shrink: 0;
+        min-width: 0;
+    }
+}
+
+.content {
+    width: calc( 100% - 20em );
+    margin-left: 20em;
+    height: auto;
+    background-color: white;
+    color: black;
+    overflow: auto;
+}
+
+.container, .footer {
+    padding: 2em 12em;
+}
+
+.container {
+    min-height: 50vh;
+}
+
+@media only screen and ( max-width: 992px ) {
+    .container, .footer, .hero {
+        padding: 2em 6em;
+    }
+}
+
+@media only screen and ( max-width: 768px ) {
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container, .footer, .hero {
+        padding: 2em;
+    }
+}

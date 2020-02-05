@@ -1,0 +1,16 @@
+.input, .textarea, .select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid $primary;
+    color: #333333;
+    border-radius: 0;
+    margin-top: 0.5em;
+}
+
+.select {
+    border-bottom: none;
+}
+
+.input {
+    height: 2em;
+}
