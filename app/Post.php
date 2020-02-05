@@ -3,12 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
 class Post extends Model
 {
     use HasSlug;
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +18,7 @@ class Post extends Model
      * @var array
      */
     protected $fillable = [
-        'title', 'text', 'points',  'state', 'views', 'shares', 'user_id'
+        'title', 'text', 'points',  'state', 'views', 'shares', 'user_id', 'published_at'
     ];
 
     public function user()
@@ -41,10 +43,11 @@ class Post extends Model
     public function getSlugOptions() : SlugOptions
     {
         return SlugOptions::create()
-            ->generateSlugsFrom('title')
+            ->generateSlugsFrom( [ 'title', 'id' ] )
             ->saveSlugsTo('slug')
             ->usingSeparator('-')
-            ->slugsShouldBeNoLongerThan(50);
+            ->slugsShouldBeNoLongerThan(50)
+            ->doNotGenerateSlugsOnUpdate();
     }
 
     /**
