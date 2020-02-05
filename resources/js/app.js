@@ -1,1 +1,4 @@
-require('./bootstrap');
+require( './bootstrap' );
+require( './cookieconsent' );
+require( './mobile/navigation' );
+
