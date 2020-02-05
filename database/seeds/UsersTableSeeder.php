@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Felix Wetell',
             'email' => 'felix.wetell@gmail.com',
             'password' => bcrypt('password'),
-            'email_verified_at' => Date::now()
+            'email_verified_at' => now()
         ]);
     }
 }
