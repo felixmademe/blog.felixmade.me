@@ -12,6 +12,11 @@ $sidebar-width: calc( 300px - 20px );
     .sidebar-container {
         height: auto;
 
+        &-brand {
+            padding: 0 40px;
+            margin-bottom: -50px;
+        }
+
         &-item {
             display: block;
             font-size: 1.3em;
