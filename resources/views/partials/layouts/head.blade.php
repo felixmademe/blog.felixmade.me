@@ -12,4 +12,6 @@
 {{-- JavaScript --}}
 <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script defer src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
 <script defer src="{{ asset( 'js/app.js' ) }}" type="text/javascript"></script>
+
