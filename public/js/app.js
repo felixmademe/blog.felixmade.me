@@ -37056,6 +37056,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./cookieconsent */ "./resources/js/cookieconsent.js");
 
+__webpack_require__(/*! ./editor */ "./resources/js/editor.js");
+
 __webpack_require__(/*! ./mobile/navigation */ "./resources/js/mobile/navigation.js");
 
 /***/ }),
@@ -37128,6 +37130,19 @@ window.cookieconsent.initialise({
     "dismiss": "Uppfattat!",
     "link": "Läs mer här"
   }
+});
+
+/***/ }),
+
+/***/ "./resources/js/editor.js":
+/*!********************************!*\
+  !*** ./resources/js/editor.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+tinymce.init({
+  selector: 'textarea.textarea'
 });
 
 /***/ }),

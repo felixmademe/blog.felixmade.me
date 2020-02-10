@@ -19,7 +19,7 @@
 
         <div class="group">
             <label class="label" for="text">Text</label>
-            <textarea id="text" name="text" class="textarea" rows="3" required>{{ old( 'text' ) }}</textarea>
+            <textarea id="text" name="text" class="textarea" rows="3">{!! old( 'text' ) !!}</textarea>
             @error( 'text' )
                 <span class="text error" role="alert">
                     {{ $message }}
