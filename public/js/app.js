@@ -37117,11 +37117,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#efefef",
-      "text": "#404040"
+      "background": "#1a1a1a",
+      "text": "#ffffff"
     },
     "button": {
-      "background": "#8ec760",
+      "background": "#FF4D4D",
       "text": "#ffffff"
     }
   },
