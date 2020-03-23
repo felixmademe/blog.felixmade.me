@@ -28,7 +28,7 @@
         </div>
 
         <div class="group">
-            <label class="label" for="state">Läge?
+            <label class="label" for="state">Status
                 <select class="select" name="state" required>
                     <option value="public" {{ old( 'state' ) === 'public' ? 'selected' : '' }}>Publik</option>
                     <option value="private" {{ old( 'state' ) === 'private' ? 'selected' : '' }}>Privat</option>
