@@ -1,0 +1,16 @@
+table {
+    text-align: left;
+
+    td, th {
+        padding: 3px;
+    }
+
+    th {
+        padding-left: 0;
+        margin-right: 5px;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+}

@@ -22,10 +22,7 @@ Route::get( 'om/bloggen', function()
     return view( 'about.blog' );
 } )->name( 'about.blog' );
 
-Route::get( 'om/mig', function()
-{
-    return view( 'about.me' );
-} )->name( 'about.me' );
+Route::get( 'om/mig', 'AboutMe' )->name( 'about.me' );
 
 Route::group( [ 'middleware' => 'auth' ], function()
 {

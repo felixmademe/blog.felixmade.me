@@ -22,10 +22,32 @@
         </p>
         <h4 class="subtitle small">Privat</h4>
         <p>
-            På fritiden spenderar jag min tid att koda, dricka bira med polarna och skruva på bilen. Jag har  en stor passion för
+            På fritiden spenderar jag min tid att koda, dricka bira med polarna, spela och skruva på bilen. Jag har  en stor passion för
             webbutveckling och motorsporter. Den motorsport jag är mest intresserad av, och själv utför är roadracing, racing med motorcykel
             på asfalterade banor.
         </p>
+        <h4 class="subtitle small">Folding @ Home statistik</h4>
+        <p>
+            När jag inte använder min speldator jag har hemma så bidrar jag emd datorkraft till forskningsprojektet
+            <a target="_blank" class="link" href="https://foldingathome.org/">Folding @ Home (FAH)</a>.
+            Har du extra datorkraft hemma som inte används, hjälp gärna till och bidra till forskning, för en bättre framtid tillsammans.
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Namn:</th>
+                    <td><a target="_blank" class="link" href="https://stats.foldingathome.org/donor/felixwetell">felixwetell</a></td>
+                </tr>
+                <tr>
+                    <th>Poäng:</th>
+                    <td>{{ $user->fah_score }}</td>
+                </tr>
+                <tr>
+                    <th>Rank:</th>
+                    <td>{{ $user->fah_rank }} av {{ $user->fah_total_users }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 @endsection

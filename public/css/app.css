@@ -553,7 +553,6 @@ a {
 
 .sidebar .sidebar-container-brand {
   padding: 0 40px;
-  margin-bottom: -50px;
 }
 
 .sidebar .sidebar-container-item {
@@ -792,6 +791,24 @@ a {
     margin: 1em 0;
     display: block !important;
   }
+}
+
+table {
+  text-align: left;
+}
+
+table td,
+table th {
+  padding: 3px;
+}
+
+table th {
+  padding-left: 0;
+  margin-right: 5px;
+}
+
+table td {
+  padding-left: 10px;
 }
 
 input:focus,
