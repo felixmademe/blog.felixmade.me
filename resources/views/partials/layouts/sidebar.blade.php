@@ -15,9 +15,9 @@
             </form>
             <hr class="separator no-margin">
         @endauth
-        <a class="sidebar-container-item" href="{{ url( '/' ) }}">Flöde</a>
-        <a class="sidebar-container-item" href="{{ route( 'posts.index' ) }}">Alla inlägg</a>
-        <a class="sidebar-container-item" href="{{ route( 'about.blog' ) }}">Om bloggen</a>
-        <a class="sidebar-container-item sub" href="{{ route( 'about.me' ) }}">Om mig</a>
+        <a class="sidebar-container-item {{ Request::is( '/' ) ? 'active' : '' }}" href="{{ url( '/' ) }}">Flöde</a>
+        <a class="sidebar-container-item {{ Request::segment( 1 ) == 'inlägg' ? 'active' : '' }}" href="{{ route( 'posts.index' ) }}">Alla inlägg</a>
+        <a class="sidebar-container-item {{ Request::segment( 2 ) == 'bloggen' ? 'active' : '' }}" href="{{ route( 'about.blog' ) }}">Om bloggen</a>
+        <a class="sidebar-container-item sub {{ Request::segment( 2 ) == 'mig' ? 'active' : '' }}" href="{{ route( 'about.me' ) }}">Om mig</a>
     </div>
 </nav>
