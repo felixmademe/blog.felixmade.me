@@ -21,7 +21,7 @@
 
 <div class="navigation">
     <div class="navigation-container">
-        <a class="navigation-container-item" href="{{ Request::url( '/' ) }}">
+        <a class="navigation-container-item" href="{{ url( '/' ) }}">
             <img class="image" src="{{ asset( 'img/logo.png' ) }}" alt="Random logo">
         </a>
         <a class="navigation-container-item">
