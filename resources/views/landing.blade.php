@@ -1,4 +1,4 @@
-@section( 'title', 'Hello' )
+@section( 'title', 'En blogg om inget' )
 @section( 'heroTitle', 'Välkonmen till ' . env( 'APP_NAME' ) )
 @section( 'heroSubtitle', 'Ta en titt' )
 @extends( 'layouts.app' )

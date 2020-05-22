@@ -4,6 +4,14 @@
 
 {{-- SEO --}}
 <title>{{ env( 'APP_NAME' ) }} - @yield( 'title', 'En blogg om inget' )</title>
+<meta name="title" content="Wetell blogg - En blogg om inget">
+<meta name="description" content="Hej, jag heter Felix Wetell!Det är jag som har skapat, uppdaterar och underhåller den här bloggen.">
+<meta name="keywords" content="blogg, wetell, personal, development, coding, inlägg">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="Swedish">
+<meta name="revisit-after" content="30 days">
+<meta name="author" content="Felix Wetell">
 
 {{-- Favicon --}}
 <link rel="apple-touch-icon" sizes="180x180" href="{{ asset( 'img/favicon/apple-touch-icon.png' ) }}">
