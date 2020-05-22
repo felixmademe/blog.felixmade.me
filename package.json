@@ -13,7 +13,7 @@
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
         "cross-env": "^5.1",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
@@ -24,6 +24,6 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "tinymce": "^5.1.6"
+        "tinymce": "^5.2.2"
     }
 }
