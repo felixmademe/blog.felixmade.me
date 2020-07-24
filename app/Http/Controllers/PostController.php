@@ -131,16 +131,15 @@ class PostController extends Controller
      */
     public function display( $slug )
     {
+        dd( Post::last()->id );
+
         $post = Post::where( 'slug', $slug )->first();
         $post->fill( [ 'views' => $post->views + 1 ] );
         $post->save();
 
-        $random = Post::all()->random();
-        while( $random === $post )
-        {
-            $random = Post::all()->random();
-        }
+        $lastPost = Post::find( $post->id - 1 !== 0 ? $post->id - 1 : Post::latest()->first()->id );
 
-        return view( 'posts.display' )->with( 'post', $post )->with( 'random', $random );
+
+        return view( 'posts.display' )->with( 'post', $post )->with( 'random', $lastPost );
     }
 }
