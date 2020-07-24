@@ -22,7 +22,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::where( 'state', 'public' );
+        $posts = Post::where( 'state', 'public' )->orderBy( 'created_at', 'desc' );
         $total = $posts->count();
         $posts = $posts->simplePaginate( 10 );
 
