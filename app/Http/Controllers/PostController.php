@@ -131,8 +131,6 @@ class PostController extends Controller
      */
     public function display( $slug )
     {
-        dd( Post::last()->id );
-
         $post = Post::where( 'slug', $slug )->first();
         $post->fill( [ 'views' => $post->views + 1 ] );
         $post->save();
