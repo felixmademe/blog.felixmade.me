@@ -27,7 +27,7 @@
             på asfalterade banor.
         </p>
         
-        <h4 class="subtitle small">GitHub</h4>
+        <h4 class="subtitle small">GitHub  - <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/felixwetell">feixwetell</a></h4>
         <p>
             Som många av mina nära och kära vet, så älskar jag att koda och bygga webbsidor. Jag bygger webbsidor åtmig själv, kompisar, organisationer, förenignar och 
             företag. Finns det en webbsida att bygga hjälper jag gärna till, från design, kodning och uppladdning. Servern som allt kör på är en droplet från 
@@ -40,7 +40,7 @@
                 alt="felixwetell's stats" data-canonical-src="https://github-readme-stats.vercel.app/api?username=felixwetell&amp;show_icons=true" style="max-width:100%;">
             </a>
         </p>
-        <h4 class="subtitle small">Folding @ Home statistik</h4>
+        <h4 class="subtitle small">Folding @ Home - <a class="link" target="_blank" rel="noopener noreferrer" href="https://stats.foldingathome.org/donor/felixwetell">feixwetell</a></h4>
         <p>
             När jag inte använder min speldator jag har hemma så bidrar jag emd datorkraft till forskningsprojektet
             <a target="_blank" class="link" href="https://foldingathome.org/">Folding @ Home (FAH)</a>.
