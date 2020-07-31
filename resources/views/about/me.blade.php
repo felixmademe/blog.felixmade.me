@@ -42,7 +42,7 @@
         </p>
         <h4 class="subtitle small">Folding @ Home - <a class="link" target="_blank" rel="noopener noreferrer" href="https://stats.foldingathome.org/donor/felixwetell">felixwetell</a></h4>
         <p>
-            När jag inte använder min speldator jag har hemma så bidrar jag emd datorkraft till forskningsprojektet
+            När jag inte använder min speldator jag har hemma så bidrar jag med datorkraft till forskningsprojektet
             <a target="_blank" class="link" href="https://foldingathome.org/">Folding @ Home (FAH)</a>.
             Har du extra datorkraft hemma som inte används, hjälp gärna till och bidra till forskning, för en bättre framtid tillsammans.
         </p>
