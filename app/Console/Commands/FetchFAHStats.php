@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 
 class FetchFAHStats extends Command
@@ -42,10 +43,12 @@ class FetchFAHStats extends Command
         $content = file_get_contents( $url );
         $json = json_decode( $content );
 
+
         $user = User::first();
         $user->fah_score = $json->credit;
         $user->fah_rank = $json->rank;
         $user->fah_total_users = $json->total_users;
+        $user->fah_updated_at = Carbon::now();
         $user->save();
 
         $this->info( 'FAH Stats fetched and updated successfully!' );

@@ -26,17 +26,17 @@
             webbutveckling och motorsporter. Den motorsport jag är mest intresserad av, och själv utför är roadracing, racing med motorcykel
             på asfalterade banor.
         </p>
-        
+
         <h4 class="subtitle small">GitHub  - <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/felixwetell">felixwetell</a></h4>
         <p>
-            Som många av mina nära och kära vet, så älskar jag att koda och bygga webbsidor. Jag bygger webbsidor åtmig själv, kompisar, organisationer, förenignar och 
-            företag. Finns det en webbsida att bygga hjälper jag gärna till, från design, kodning och uppladdning. Servern som allt kör på är en droplet från 
-            <a href="https://digitalocean.com" rel="noopener noreferrer" class="link" target="_blank">Digital Ocean</a> och hanterar servern med ett verktyg som heter 
-            <a href="https://plesk.com" rel="noopener noreferrer" class="link" target="_blank">Plesk</a>. Med dessa vektyg skriver jag kod, skapar commit som sedan laddas upp på servern och kan sedan ses direkt. 
+            Som många av mina nära och kära vet, så älskar jag att koda och bygga webbsidor. Jag bygger webbsidor åtmig själv, kompisar, organisationer, förenignar och
+            företag. Finns det en webbsida att bygga hjälper jag gärna till, från design, kodning och uppladdning. Servern som allt kör på är en droplet från
+            <a href="https://digitalocean.com" rel="noopener noreferrer" class="link" target="_blank">Digital Ocean</a> och hanterar servern med ett verktyg som heter
+            <a href="https://plesk.com" rel="noopener noreferrer" class="link" target="_blank">Plesk</a>. Med dessa vektyg skriver jag kod, skapar commit som sedan laddas upp på servern och kan sedan ses direkt.
         </p>
         <p>
             <a class="link" target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4d590d362c3057ec8ec5f59e37059a0a70a29810/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d66656c6978776574656c6c2673686f775f69636f6e733d74727565">
-                <img src="https://camo.githubusercontent.com/4d590d362c3057ec8ec5f59e37059a0a70a29810/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d66656c6978776574656c6c2673686f775f69636f6e733d74727565" 
+                <img src="https://camo.githubusercontent.com/4d590d362c3057ec8ec5f59e37059a0a70a29810/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d66656c6978776574656c6c2673686f775f69636f6e733d74727565"
                 alt="felixwetell's stats" data-canonical-src="https://github-readme-stats.vercel.app/api?username=felixwetell&amp;show_icons=true" style="max-width:100%;">
             </a>
         </p>
@@ -62,6 +62,7 @@
                 </tr>
             </tbody>
         </table>
+        <small>Senast uppdaterad: {{ $user->fah_updated_at }}</small>
     </div>
 
 @endsection
