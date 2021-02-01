@@ -20,4 +20,15 @@
     &-text {
         line-height: 1.5em;
     }
+
+    a {
+        color: $primary;
+        text-decoration: none;
+        transition: color .2s;
+
+        &:hover {
+            color: $primary-dark;
+            text-decoration: underline;
+        }
+    }
 }
