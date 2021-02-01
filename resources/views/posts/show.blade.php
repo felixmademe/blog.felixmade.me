@@ -5,7 +5,9 @@
 
 @section( 'content' )
 
-    @include( 'partials.posts.text', [ 'post' => $post, 'admin' => true ] )
+    <div class="post">
+        @include( 'partials.posts.text', [ 'post' => $post, 'admin' => true ] )
+    </div>
     @auth
         <h4 class="subtitle medium">Statistik:</h4>
         <table class="text">
