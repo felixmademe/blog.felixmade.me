@@ -50,7 +50,7 @@
             <tbody>
                 <tr>
                     <th>Namn:</th>
-                    <td><a target="_blank" class="link" href="https://stats.foldingathome.org/donor/felixwetell">felixwetell</a></td>
+                    <td><a target="_blank" class="link" href="https://stats.foldingathome.org/donor/">felixwetell</a></td>
                 </tr>
                 <tr>
                     <th>Poäng:</th>

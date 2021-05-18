@@ -23,12 +23,21 @@
 <meta name="theme-color" content="#1a1a1a">
 
 {{-- CSS --}}
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<link href="{{ asset( 'css/app.css' ) }}" rel="stylesheet">
+
+@if( config( 'app.env' ) == 'production' )
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+@else
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@endif
 
 {{-- JavaScript --}}
 <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-135535698-6"></script>
 <script defer src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
-<script defer src="{{ asset( 'js/app.js' ) }}" type="text/javascript"></script>
+
+@if( config( 'app.env' ) == 'production' )
+    <script src="{{ mix('js/app.js') }}" defer></script>
+@else
+    <script src="{{ asset('js/app.js') }}" defer></script>
+@endif

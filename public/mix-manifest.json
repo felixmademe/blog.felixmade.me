@@ -1,8 +1,8 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/node_modules/tinymce/jquery.tinymce.js": "/node_modules/tinymce/jquery.tinymce.js",
-    "/node_modules/tinymce/jquery.tinymce.min.js": "/node_modules/tinymce/jquery.tinymce.min.js",
-    "/node_modules/tinymce/tinymce.js": "/node_modules/tinymce/tinymce.js",
-    "/node_modules/tinymce/tinymce.min.js": "/node_modules/tinymce/tinymce.min.js"
+    "/js/app.js": "/js/app.js?id=afa8755158ce33ca5a5e",
+    "/css/app.css": "/css/app.css?id=38ff43a1ef6d71cc762c",
+    "/node_modules/tinymce/jquery.tinymce.js": "/node_modules/tinymce/jquery.tinymce.js?id=a154c15cd3488c8f93b3",
+    "/node_modules/tinymce/jquery.tinymce.min.js": "/node_modules/tinymce/jquery.tinymce.min.js?id=a154c15cd3488c8f93b3",
+    "/node_modules/tinymce/tinymce.js": "/node_modules/tinymce/tinymce.js?id=589a429ebd25199090dc",
+    "/node_modules/tinymce/tinymce.min.js": "/node_modules/tinymce/tinymce.min.js?id=65449d2d5a7af4f76100"
 }

@@ -1,7 +1,9 @@
 <nav id="sidebar" class="sidebar">
     <div class="sidebar-container">
         <div class="sidebar-container-brand">
-            <img class="image" src="{{ asset( 'img/logo.png' ) }}" alt="Random logo" />
+            <a href="{{ url('/') }}">
+                <img class="image" src="{{ asset( 'img/logo.png' ) }}" alt="Random logo" />
+            </a>
         </div>
         @auth
             <a class="sidebar-container-item" href="{{ route( 'user.profile' ) }}">Profil</a>
