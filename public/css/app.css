@@ -758,12 +758,12 @@ button:focus {
 .post-text {
   line-height: 1.5em;
 }
-.post a {
+.post-text a {
   color: #FF4D4D;
   text-decoration: none;
   transition: color 0.2s;
 }
-.post a:hover {
+.post-text a:hover {
   color: #ff0101;
   text-decoration: underline;
 }

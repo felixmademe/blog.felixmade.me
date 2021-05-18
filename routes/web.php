@@ -18,8 +18,6 @@ use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ShowProfile;
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-
 Route::get( '/', LandingController::class );
 
 Route::get('inloggning', [LoginController::class, 'showLoginForm'])->name( 'login-form' );
@@ -41,7 +39,7 @@ Route::group( [ 'middleware' => 'auth' ], function()
     Route::post( 'inlägg/lagra', [PostController::class, 'store'] )->name( 'posts.store' );
     Route::patch( 'inlägg/{id}', [PostController::class, 'update'] )->name( 'posts.update' );
     Route::delete( 'inlägg/{id}', [PostController::class, 'destroy'] )->name( 'posts.destroy' );
-    Route::get( 'profil', [ShowProfile::class] )->name( 'user.profile' );
+    Route::get( 'profil', ShowProfile::class )->name( 'user.profile' );
 });
 
 Route::get( 'inlägg', [PostController::class, 'index'] )->name( 'posts.index' );
