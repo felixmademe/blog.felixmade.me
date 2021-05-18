@@ -7,7 +7,7 @@
     z-index: 2;
 
     &-container {
-        padding: 1em 2em 3em 2em;
+        padding: 1em 2em;
         display: flex;
         max-height: 3.5em;
         align-items: center;
@@ -15,7 +15,7 @@
 
         &-item {
             max-width: 50%;
-            max-height: 3.5em;
+            height: 100%;
 
             .image {
                 max-height: 5em;

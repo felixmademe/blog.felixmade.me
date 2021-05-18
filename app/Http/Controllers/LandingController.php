@@ -17,7 +17,7 @@ class LandingController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $posts = Post::orderBy('id', 'desc')->where( 'state', 'public' )->take( 10 )->get();
+        $posts = Post::orderBy('created_at', 'desc')->where( 'state', 'public' )->take( 5 )->get();
         return view( 'landing' )->with( 'posts', $posts );
     }
 }
