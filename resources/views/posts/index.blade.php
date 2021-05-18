@@ -9,6 +9,6 @@
         @include( 'partials.posts.post', [ 'post' => $post, 'admin' => false ] )
     @endforeach
 
-    {{ $posts->links() }}
+    {{ $posts->links('partials.layouts.pagination') }}
 
 @endsection

@@ -1,5 +1,6 @@
 @if ($paginator->hasPages())
-    <div class="group">
+    <hr>
+    <div>
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <a class="button is-disabled">
@@ -23,4 +24,9 @@
             </a>
         @endif
     </div>
+    <p>
+        <i>"Fix the cause, not the symptom."</i>
+        <br>
+        ~ Steve Maguire
+    </p>
 @endif
