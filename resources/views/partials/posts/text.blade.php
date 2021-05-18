@@ -1,8 +1,8 @@
 <small class="post-date">Publicerad {{ $post->created_at }} av <a class="link" href="{{ route( 'about.me' ) }}">{{ $post->user->name }}</a></small>
 <hr>
-<p class="text">
+<div class="post-text">
     {!! $post->text !!}
-</p>
+</div>
 
 @auth
     <hr>

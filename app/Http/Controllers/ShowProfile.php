@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Post;
+use App\Models\Post;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

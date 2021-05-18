@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Sluggable\HasSlug;
@@ -21,12 +21,12 @@ class Category extends Model
 
     public function posts()
     {
-        return $this->hasMany( 'App\Post' );
+        return $this->hasMany( 'App\Models\Post' );
     }
 
     public function tags()
     {
-        return $this->hasManyThrough( 'App\Tag', 'App\Post' );
+        return $this->hasManyThrough( 'App\Models\Tag', 'App\Models\Post' );
     }
 
     /**

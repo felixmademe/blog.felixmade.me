@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 
-use App\Post;
+use App\Models\Post;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;

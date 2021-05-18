@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {{-- SEO --}}
-<title>{{ env( 'APP_NAME' ) }} - @yield( 'title', 'En blogg om inget' )</title>
+<title>{{ config( 'app.name' ) }} - @yield( 'title', 'En blogg om inget' )</title>
 <meta name="title" content="Wetell blogg - En blogg om inget">
 <meta name="description" content="Hej, jag heter Felix Wetell!Det är jag som har skapat, uppdaterar och underhåller den här bloggen.">
 <meta name="keywords" content="blogg, wetell, personal, development, coding, inlägg">
@@ -23,7 +23,6 @@
 <meta name="theme-color" content="#1a1a1a">
 
 {{-- CSS --}}
-
 @if( config( 'app.env' ) == 'production' )
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 @else

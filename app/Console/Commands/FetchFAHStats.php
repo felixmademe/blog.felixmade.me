@@ -2,8 +2,9 @@
 
 namespace App\Console\Commands;
 
-use App\User;
+use App\Models\User;
 use Carbon\Carbon;
+use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 
 class FetchFAHStats extends Command
@@ -39,15 +40,17 @@ class FetchFAHStats extends Command
      */
     public function handle()
     {
-        $url = 'https://stats.foldingathome.org/api/donor/felixwetell';
-        $content = file_get_contents( $url );
+
+        $url = 'https://api.foldingathome.org/uid/62032396';
+        $client = new Client();
+        $res = $client->get($url);
+        $content = (string) $res->getBody();
         $json = json_decode( $content );
 
-
         $user = User::first();
-        $user->fah_score = $json->credit;
+        $user->fah_score = $json->score;
         $user->fah_rank = $json->rank;
-        $user->fah_total_users = $json->total_users;
+        $user->fah_total_users = $json->users;
         $user->fah_updated_at = Carbon::now();
         $user->save();
 
