@@ -1,0 +1,14 @@
+.subscribe {
+    padding-bottom: 0;
+
+    &-title {
+        margin-top: 3em;
+    }
+
+    &-response {
+        display: block;
+        background: $gradient-hr;
+        padding: 0.5em 1em;
+        color: white;
+    }
+}

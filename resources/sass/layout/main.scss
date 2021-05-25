@@ -21,7 +21,7 @@
     overflow: auto;
 }
 
-.container, .footer {
+.container, .footer, .subscribe {
     padding: 2em 12em;
 }
 
@@ -30,7 +30,7 @@
 }
 
 @media only screen and ( max-width: 992px ) {
-    .container, .footer, .hero {
+    .container, .footer, .hero, .subscribe {
         padding: 2em 6em;
     }
 }
@@ -41,7 +41,7 @@
         margin-left: 0;
     }
 
-    .container, .footer, .hero {
+    .container, .footer, .hero, .subscribe {
         padding: 1em;
     }
 }
