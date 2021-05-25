@@ -17,6 +17,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ShowProfile;
+use App\Http\Controllers\SubscriptionController;
 
 Route::get( '/', LandingController::class );
 
@@ -30,6 +31,8 @@ Route::get( 'om/bloggen', function()
 } )->name( 'about.blog' );
 
 Route::get( 'om/mig', AboutMe::class)->name( 'about.me' );
+Route::post( '/subscribeForm', [SubscriptionController::class, 'subscribe'] );
+Route::post( '/unsubscribeForm', [SubscriptionController::class, 'unsubscribe'] );
 
 Route::group( [ 'middleware' => 'auth' ], function()
 {
