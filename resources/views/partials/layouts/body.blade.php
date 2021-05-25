@@ -5,6 +5,7 @@
         <div class="container">
             @yield( 'content' )
         </div>
+        @include( 'partials.layouts.subscribe' )
         @include( 'partials.layouts.footer' )
     </section>
     @include( 'partials.layouts.mobile.navigation' )
