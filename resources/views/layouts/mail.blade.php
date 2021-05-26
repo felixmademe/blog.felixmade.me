@@ -3,14 +3,7 @@
 <head>
     <meta charset="utf-8">
     <style>
-        :root {
-            --text: black;
-            --primary: #FF4D4D;
-            --primary-dark: #FF0101;
-            --secondary: #7158E2;
-            --secondary-dark: #4123CA;
-            --darkgrey: #1a1a1a;
-        }
+
         @font-face
         {
             src: url('https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Sans:400,400i,700,700i&display=swap');
@@ -21,12 +14,12 @@
         }
         a
         {
-            color: var(--primary);
+            color: #FF4D4D;
             text-decoration: none;
         }
         a:hover
         {
-            color: var(--primary-dark);
+            color: #FF0101;
             text-decoration: underline;
         }
         .name
@@ -40,13 +33,13 @@
         }
         body
         {
-            background-color: var(--darkgrey);
+            background-color: #1a1a1a;
             width: 70%;
             margin: 0 auto;
         }
         .hero
         {
-            background: linear-gradient( 180deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient( 180deg, #FF4D4D 0%, #7158E2 100%);
             color: #fff;
             padding: 20px 3em;
             width: calc(100% - 6em);
@@ -95,12 +88,12 @@
             text-decoration: none;
             text-align: center;
             user-select: none;
-            background-color: var(--secondary);
+            background-color: #7158E2;
             color: #fff;
             transition-duration: 0.2s;
         }
         .button:hover {
-            background-color: var(--secondary-dark);
+            background-color: #4123CA;
             color: #fff;
             text-decoration: none;
             transition-duration: 0.2s;
