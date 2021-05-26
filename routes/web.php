@@ -31,8 +31,10 @@ Route::get( 'om/bloggen', function()
 } )->name( 'about.blog' );
 
 Route::get( 'om/mig', AboutMe::class)->name( 'about.me' );
-Route::post( '/subscribeForm', [SubscriptionController::class, 'subscribe'] );
-Route::post( '/unsubscribeForm', [SubscriptionController::class, 'unsubscribe'] );
+
+Route::post( '/prenumerera', [SubscriptionController::class, 'subscribe'] )->name('subscribe');
+Route::get( '/avprenumerera', [SubscriptionController::class, 'unsubscribeForm'] )->name('unsubscribe-form');
+Route::post( '/avprenumerera', [SubscriptionController::class, 'unsubscribe'] )->name('unsubscribe');
 
 Route::group( [ 'middleware' => 'auth' ], function()
 {
@@ -47,3 +49,4 @@ Route::group( [ 'middleware' => 'auth' ], function()
 
 Route::get( 'inlägg', [PostController::class, 'index'] )->name( 'posts.index' );
 Route::get( 'inlägg/{slug}', [PostController::class, 'display'] )->name( 'posts.display' );
+
