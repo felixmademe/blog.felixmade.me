@@ -17,6 +17,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ShowProfile;
+use App\Http\Controllers\SubscriptionController;
 
 Route::get( '/', LandingController::class );
 
@@ -31,6 +32,10 @@ Route::get( 'om/bloggen', function()
 
 Route::get( 'om/mig', AboutMe::class)->name( 'about.me' );
 
+Route::post( '/prenumerera', [SubscriptionController::class, 'subscribe'] )->name('subscribe');
+Route::get( '/avprenumerera', [SubscriptionController::class, 'unsubscribeForm'] )->name('unsubscribe-form');
+Route::post( '/avprenumerera', [SubscriptionController::class, 'unsubscribe'] )->name('unsubscribe');
+
 Route::group( [ 'middleware' => 'auth' ], function()
 {
     Route::get( 'inlägg/skapa', [PostController::class, 'create'] )->name( 'posts.create' );
@@ -44,3 +49,4 @@ Route::group( [ 'middleware' => 'auth' ], function()
 
 Route::get( 'inlägg', [PostController::class, 'index'] )->name( 'posts.index' );
 Route::get( 'inlägg/{slug}', [PostController::class, 'display'] )->name( 'posts.display' );
+

@@ -30,13 +30,13 @@
 @endif
 
 {{-- JavaScript --}}
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-135535698-6"></script>
-<script defer src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>
-
 @if( config( 'app.env' ) == 'production' )
     <script src="{{ mix('js/app.js') }}" defer></script>
 @else
     <script src="{{ asset('js/app.js') }}" defer></script>
 @endif
+
+<script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-135535698-6"></script>
+<script defer src="https://www.google.com/recaptcha/api.js?render={{ config( 'google.recaptcha.site' ) }}"></script>
+<script defer src="{{ asset('node_modules/tinymce/tinymce.js') }}"></script>

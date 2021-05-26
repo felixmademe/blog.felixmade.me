@@ -1,5 +1,5 @@
 @section( 'title', 'Hello' )
-@section( 'heroTitle', 'Välkonmen till ' . env( 'APP_NAME' ) )
+@section( 'heroTitle', 'Välkonmen till ' . config( 'app.name' ) )
 @section( 'heroSubtitle', 'Ta en titt' )
 @extends( 'layouts.app' )
 
