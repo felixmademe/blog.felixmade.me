@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendSubscriberEmail;
+use App\Models\Subscription;
 use Carbon\Carbon;
 
 use App\Models\Post;
@@ -57,6 +59,13 @@ class PostController extends Controller
             'user_id' => Auth::user()->id,
             'published_at' => $request->state === 'public' ? Carbon::now()->toDateTimeString() : null,
         ] );
+
+        $job = (new SendSubscriberEmail($post))
+            ->delay(now()->addSeconds(2));
+
+        dispatch($job);
+
+        dd("Mail send successfully !!");
 
         return redirect()->route( 'posts.show', $post->id );
     }
