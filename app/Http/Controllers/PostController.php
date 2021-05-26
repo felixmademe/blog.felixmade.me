@@ -64,9 +64,7 @@ class PostController extends Controller
             ->delay(now()->addSeconds(2));
 
         dispatch($job);
-
-        dd("Mail send successfully !!");
-
+        
         return redirect()->route( 'posts.show', $post->id );
     }
 
