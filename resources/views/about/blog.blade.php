@@ -19,7 +19,14 @@
         <ul>
             <li>Laravel</li>
             <li>SCSS</li>
+            <li>JavaScript / jQuery</li>
+            <li>Lite magik</li>
+            <li>Lite kreativitet</li>
         </ul>
+        <p>
+            Designen är baserad på Spotify's design system Encore, som den använder internt för att designa webbsidor, läs mer om det
+            <a class="link" href="https://spotify.design/article/reimagining-design-systems-at-spotify" target="_blank">här</a>.
+        </p>
     </div>
 
 @endsection
