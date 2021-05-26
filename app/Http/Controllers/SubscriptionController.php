@@ -31,8 +31,6 @@ class SubscriptionController extends Controller
         $result = file_get_contents( $url, false, $context );
         $json = json_decode( $result );
 
-        return response()->json( [ 'result' => $result ], 200);
-
         if( config('app.env') != 'production' ) {
             $json->success = true;
         }
