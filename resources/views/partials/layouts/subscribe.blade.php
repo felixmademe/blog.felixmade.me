@@ -7,11 +7,6 @@
         <input type="hidden" id="recaptcha" name="recaptcha" value="{{ config( 'google.recaptcha.site' ) }}">
         <label class="label hidden" for="email" type="hidden">E-post</label>
         <input type="email" class="input" id="email" name="email" value="{{ old( 'email' ) }}" placeholder="E-postadress" autocomplete required>
-        @error( 'email' )
-            <span class="text error" role="alert">
-                {{ $message }}
-            </span>
-        @enderror
         <small>
             Denna webbplats är skyddad av reCAPTCHA och Googles
             <a class="link" href="https://policies.google.com/privacy"

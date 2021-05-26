@@ -64,7 +64,7 @@ class PostController extends Controller
             ->delay(now()->addSeconds(2));
 
         dispatch($job);
-        
+
         return redirect()->route( 'posts.show', $post->id );
     }
 
