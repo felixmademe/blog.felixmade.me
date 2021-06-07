@@ -1,10 +1,5 @@
 let staticCacheName = "pwa-v" + new Date().getTime();
 let filesToCache = [
-    '/',
-    '/css/app.css',
-    '/js/app.js',
-    // add your favicons and maskable icons
-    // and add any other resource you want to be cached
 ];
 
 // Cache on install
