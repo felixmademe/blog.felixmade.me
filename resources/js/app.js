@@ -2,6 +2,7 @@ window.$ = require( 'jquery' );
 
 $(document).ready(function() {
     require('tinymce');
+    require('cookieconsent');
     require('./components/analytics');
     require('./components/cookieconsent');
     require('./components/editor');

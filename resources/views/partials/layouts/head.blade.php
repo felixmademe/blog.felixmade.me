@@ -36,7 +36,6 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 @endif
 
-<script defer src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-135535698-6"></script>
 <script src='https://www.google.com/recaptcha/api.js?render={{ config( 'google.recaptcha.site' ) }}&render=explicit'></script>
 <script defer>
