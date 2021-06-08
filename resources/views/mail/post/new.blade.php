@@ -1,5 +1,5 @@
 @section('title', $post->title )
-@section('name', $post->name )
+@section('name', 'Felix Wetell' )
 @extends( 'layouts.mail' )
 
 @section( 'content' )
