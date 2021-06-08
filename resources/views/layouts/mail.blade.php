@@ -34,7 +34,7 @@
         }
         body
         {
-            background-color: #1a1a1a;
+            background-color: #1a1a1a !important;
             width: 70%;
             margin: 0 auto;
         }
@@ -112,7 +112,6 @@
     <title>{{ config('app.name') }}</title>
 </head>
 <body>
-<div>
     <div class="main">
         <div class="hero">
             <h1 class="title">@yield('title', 'Titel')</h1>
@@ -127,6 +126,5 @@
         <h3>{{ config( 'app.name' ) }}</h3>
         <a href="{{ config( 'app.url' ) }}">{{ config( 'app.url' ) }}</a>
     </footer>
-</div>
 </body>
 </html>
