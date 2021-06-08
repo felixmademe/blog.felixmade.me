@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
 
         @font-face
@@ -78,7 +79,6 @@
         button {
             border:none;
         }
-
         .button {
             display: inline-block;
             margin: 1em .5em 1em 0;
@@ -109,6 +109,7 @@
             }
         }
     </style>
+    <title>{{ config('app.name') }}</title>
 </head>
 <body>
 <div>

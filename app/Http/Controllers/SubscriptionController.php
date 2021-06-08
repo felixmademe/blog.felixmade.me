@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewSubscriber;
 use App\Models\Subscription;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class SubscriptionController extends Controller
 {
@@ -46,6 +48,8 @@ class SubscriptionController extends Controller
             Subscription::create([
                 'email' => $request->email,
             ]);
+
+            Mail::to($request->email)->send(new NewSubscriber());
 
             return response()->json( [ 'result' => 'Välkommen till klubben, nya inlägg kommer att meddelas via mail.' ], 200);
         }
