@@ -42,7 +42,7 @@ class SendSubscriberEmail implements ShouldQueue
 
         foreach ($subscribers as $subscriber) {
             $data['email'] = $subscriber->email;
-            $data['title'] = $this->post->title;
+            $data['title'] = 'Nytt blogginlägg - ' . config('app.name');
 
             Mail::send('mail.post.new', ['post' => $this->post], function($message) use ($data) {
                 $message->to($data['email'])->subject($data['title']);
