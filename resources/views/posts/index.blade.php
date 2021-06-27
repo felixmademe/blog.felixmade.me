@@ -1,4 +1,4 @@
-@section( 'title', 'Alla artiklar' )
+@section( 'title', 'Alla inlägg' )
 @section( 'heroTitle', 'Alla inlägg' )
 @section( 'heroSubtitle', 'Antal inlägg: '. $total )
 @extends( 'layouts.app' )
