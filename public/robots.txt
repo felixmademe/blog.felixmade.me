@@ -1,3 +1,2 @@
-sitemap: https://blog.wetell.se/sitemap.xml
 User-agent: *
-Allow: /
+Disallow:
