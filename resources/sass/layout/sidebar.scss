@@ -1,0 +1,49 @@
+$sidebar-width: calc( 300px - 20px );
+
+.sidebar {
+    position: fixed;
+    width: 20em;
+    height: calc( 100vh - 4em );
+    padding: 2em 0;
+    color: #fff;
+    background-color: #1a1a1a;
+    overflow-y: auto;
+
+    .sidebar-container {
+        height: auto;
+
+        &-brand {
+            padding: 0 40px;
+        }
+
+        &-item {
+            display: block;
+            font-size: 1.3em;
+            margin: 0;
+            padding: .7em 1.5em;
+            color: white;
+            text-decoration: none;
+            transition: background-color .2s, color .2s;
+
+            &:hover, &.active {
+                background-color: #fff;
+                color: #000;
+            }
+
+            &.sub {
+                padding-left: 2.5em;
+
+                &-sub {
+                    padding-left: 3.5em;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+a {
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    letter-spacing: 0.07em;
+    margin-bottom: 0;
+
+    &.big {
+        font-size: 3em;
+    }
+
+    &.medium {
+        font-size: 2em;
+    }
+
+    &.small {
+        font-size: 1.5em;
+    }
+}
+
+.subtitle {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    margin-bottom: 0;
+    color: #393939;
+
+    &.big {
+        font-size: 3em;
+    }
+
+    &.medium {
+        font-size: 2em;
+    }
+
+    &.small {
+        font-size: 1.5em;
+    }
+}
+
+.text {
+    line-height: 1.5em;
+
+    &.error {
+        color: $primary;
+    }
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    color: $primary;
+    text-decoration: none;
+    transition: color .2s;
+
+    &:hover {
+        color: $primary-dark;
+        text-decoration: underline;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: $primary;
+}

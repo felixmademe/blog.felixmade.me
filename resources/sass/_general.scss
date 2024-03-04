@@ -1,0 +1,24 @@
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.separator {
+    width: 100%;
+    display: block;
+    border: none;
+    height: 4px;
+    background: $gradient-hr;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.grecaptcha-badge {
+    visibility: collapse !important
+}

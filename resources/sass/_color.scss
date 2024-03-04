@@ -1,0 +1,9 @@
+$darken: 15%;
+$darken-light: 10%;
+$primary: #FF4D4D;
+$primary-dark: darken( $primary, $darken );
+$secondary: #7158E2;
+$secondary-dark: darken( $secondary, $darken );
+
+$gradient: linear-gradient( 180deg, $primary 0%, $secondary 100%);
+$gradient-hr: linear-gradient( 142deg, $primary 0%, $secondary 100%);

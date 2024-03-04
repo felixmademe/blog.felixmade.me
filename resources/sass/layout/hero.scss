@@ -1,0 +1,21 @@
+.hero {
+    align-items: center;
+    background: $gradient;
+    color: #fff;
+    max-width: 100%;
+    min-height: 10em;
+    height: auto;
+    padding: 2em 12em;
+}
+
+@media only screen and ( max-width: 992px ) {
+    .hero {
+        padding: 2em 6em;
+    }
+}
+
+@media only screen and ( max-width: 768px ) {
+    .hero {
+        padding: 2em 1em;
+    }
+}
